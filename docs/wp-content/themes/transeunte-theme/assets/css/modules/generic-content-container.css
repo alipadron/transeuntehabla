@@ -1,0 +1,11 @@
+.generic-content-container {
+  font-weight: 300;
+
+  &--gray {
+	color: $darkGray;
+  }
+
+  &--white {
+	color: #fff;
+  }
+}

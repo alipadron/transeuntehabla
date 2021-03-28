@@ -1,0 +1,82 @@
+.page-section {
+  padding: 2.5rem 0;
+
+  &--transeuntes {
+	background: $lightGray;
+  }
+
+  @mixin atLarge {
+	/* padding-bottom: 2.5rem; */
+
+	/*&--transeuntes {
+	  background: url('assets/images/transeuntes.jpg') top center no-repeat;
+	  background-size: cover;
+	}
+	*/
+  }
+
+
+
+
+  &--dark-gray {
+	background-color: $darkGray;
+  }
+
+  &--light-gray {
+	background-color: $lightGray;
+  }
+
+  &__title {
+	margin: 0 0 1rem 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 3rem;
+
+	&--red {
+	  color: $mainRed;
+	}
+
+	&--blue {
+	  color: $mainBlue;
+	}
+
+	&--dark-gray {
+	  color: $darkGray;
+	}
+
+	@mixin atLarge {
+	  font-weight: 400;
+	  font-size: 5rem;
+	}
+
+	strong {
+	  font-weight: 600;
+	}
+
+	&--italic {
+	  font-style: italic;
+	}
+  }
+
+  &__description {
+	text-align: center;
+	@mixin atLarge {
+	  font-size: 1.5rem;
+	  font-weight: 400;
+	}
+
+	&--white {
+	  color: #FFF;
+	}
+
+	&--fixed-width-at-large {
+	  @mixin atLarge {
+		width: 800px;
+		position: relative;
+		transform: translateX(-50%);
+		left: 50%;
+	  }
+	}
+
+  }
+}
